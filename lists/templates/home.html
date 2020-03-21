@@ -9,6 +9,11 @@
             <input id="id_new_item" name="item_text"
                    placeholder="Enter a to-do item" />
         {% csrf_token %}
+        {% if error %}
+            <div class="has-error">
+                <span> {{ error }} </span>
+            </div>
+        {% endif %}
         </form>
 
         <table id="id_list_table" >
