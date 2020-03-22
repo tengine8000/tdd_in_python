@@ -9,7 +9,7 @@ import time
 
 class FunctionalTest(LiveServerTestCase):
 
-    MAX_WAIT = 10
+    MAX_WAIT = 20
 
     def setUp(self):
         self.browser = webdriver.Firefox()

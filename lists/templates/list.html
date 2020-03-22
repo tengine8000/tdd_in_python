@@ -9,9 +9,9 @@
             <input id="id_text" name="text"
                    placeholder="Enter a to-do item" />
         {% csrf_token %}
-            {% if error %}
+            {% if form.errors %}
             <div class="has-error">
-                <span> {{ error }} </span>
+                <span> {{ form.text.errors }} </span>
             </div>
         {% endif %}
         </form>
